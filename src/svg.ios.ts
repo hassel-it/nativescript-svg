@@ -72,7 +72,7 @@ export class ImageSourceSVG implements svg.ImageSourceSVG {
           );
         }
 
-        (<any>SVGKImage).imageWithContentsOfFileAsynchronously(
+        (<any>SVGKImage).imageWithContentsOfFileAsynchronouslyOnCompletion(
           fileName,
           image => {
             this.nativeView = image;
